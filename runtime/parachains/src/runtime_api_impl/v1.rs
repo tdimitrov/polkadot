@@ -18,16 +18,16 @@
 //! functions.
 
 use crate::{
-	configuration, dmp, hrmp, inclusion, initializer, paras, paras_inherent, scheduler,
+	configuration, disputes, dmp, hrmp, inclusion, initializer, paras, paras_inherent, scheduler,
 	session_info, shared,
 };
 use primitives::{
 	v1::{
-		AuthorityDiscoveryId, CandidateEvent, CommittedCandidateReceipt, CoreIndex, CoreOccupied,
-		CoreState, GroupIndex, GroupRotationInfo, Hash, Id as ParaId, InboundDownwardMessage,
-		InboundHrmpMessage, OccupiedCore, OccupiedCoreAssumption, PersistedValidationData,
-		ScheduledCore, ScrapedOnChainVotes, SessionIndex, ValidationCode, ValidationCodeHash,
-		ValidatorId, ValidatorIndex, ValidatorSignature,
+		AuthorityDiscoveryId, CandidateEvent, CandidateHash, CommittedCandidateReceipt, CoreIndex,
+		CoreOccupied, CoreState, DisputeState, GroupIndex, GroupRotationInfo, Hash, Id as ParaId,
+		InboundDownwardMessage, InboundHrmpMessage, OccupiedCore, OccupiedCoreAssumption,
+		PersistedValidationData, ScheduledCore, ScrapedOnChainVotes, SessionIndex, ValidationCode,
+		ValidationCodeHash, ValidatorId, ValidatorIndex, ValidatorSignature,
 	},
 	v2::{PvfCheckStatement, SessionInfo},
 };
@@ -401,4 +401,10 @@ where
 	with_assumption::<T, _, _>(para_id, assumption, || {
 		<paras::Pallet<T>>::current_code_hash(&para_id)
 	})
+}
+
+/// Implementation for `get_session_disputes` function from the runtime API
+pub fn get_session_disputes<T: disputes::Config>(
+) -> Vec<(SessionIndex, CandidateHash, DisputeState<T::BlockNumber>)> {
+	<disputes::Pallet<T>>::disputes()
 }

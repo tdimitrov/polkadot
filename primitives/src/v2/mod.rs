@@ -228,5 +228,10 @@ sp_api::decl_runtime_apis! {
 		/// NOTE: This function is only available since parachain host version 2.
 		fn validation_code_hash(para_id: v1::Id, assumption: v1::OccupiedCoreAssumption)
 			-> Option<v1::ValidationCodeHash>;
+
+		/// Returns all onchain disputes.
+		///
+		/// NOTE: THis function is only available since parachain host version 2.
+		fn get_session_disputes() -> Vec<(v1::SessionIndex, v1::CandidateHash, v1::DisputeState<v1::BlockNumber>)>;
 	}
 }
