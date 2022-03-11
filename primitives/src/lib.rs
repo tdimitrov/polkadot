@@ -25,3 +25,5 @@ pub mod v2;
 // the staging version is malleable. Once it's released, it gets the next
 // version number.
 pub mod vstaging;
+
+pub use vstaging as active_api;
