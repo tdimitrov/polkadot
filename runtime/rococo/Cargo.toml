@@ -209,3 +209,6 @@ try-runtime = [
 fast-runtime = []
 
 runtime-metrics = ["runtime-parachains/runtime-metrics", "sp-io/with-tracing"]
+
+# Use primitive's staging api instead of the stable one
+staging-api = ["primitives/staging-api"]

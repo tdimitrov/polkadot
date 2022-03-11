@@ -59,6 +59,7 @@ full-node = ["service/full-node"]
 try-runtime = ["service/try-runtime"]
 fast-runtime = ["service/fast-runtime"]
 pyroscope = ["pyro"]
+staging-api = ["service/staging-api"]
 
 # Configure the native runtimes to use. Polkadot is enabled by default.
 #

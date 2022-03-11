@@ -197,3 +197,11 @@ runtime-metrics = [
 	"polkadot-runtime/runtime-metrics",
 	"polkadot-runtime-parachains/runtime-metrics"
 ]
+
+staging-api = [
+	"polkadot-primitives/staging-api",
+	"rococo-runtime/staging-api",
+	"polkadot-runtime/staging-api",
+	"kusama-runtime/staging-api",
+	"westend-runtime/staging-api"
+]

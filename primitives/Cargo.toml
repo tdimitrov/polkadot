@@ -56,3 +56,4 @@ std = [
 	"frame-system/std",
 ]
 runtime-benchmarks = []
+staging-api = []

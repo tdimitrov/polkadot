@@ -26,4 +26,8 @@ pub mod v2;
 // version number.
 pub mod vstaging;
 
+#[cfg(feature = "staging-api")]
 pub use vstaging as active_api;
+
+#[cfg(not(feature = "staging-api"))]
+pub use v2 as active_api;
