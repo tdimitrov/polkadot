@@ -26,7 +26,7 @@ use polkadot_node_subsystem::{
 	overseer, ActiveLeavesUpdate, FromOverseer, OverseerSignal, SpawnedSubsystem, SubsystemContext,
 	SubsystemError, SubsystemResult, SubsystemSender,
 };
-use polkadot_primitives::v2::{
+use polkadot_primitives::active_api::{
 	BlockNumber, Hash, PvfCheckStatement, SessionIndex, ValidationCodeHash, ValidatorId,
 	ValidatorIndex,
 };

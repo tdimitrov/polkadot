@@ -43,7 +43,7 @@ use polkadot_node_subsystem_util::{
 	determine_new_blocks,
 	rolling_session_window::{RollingSessionWindow, SessionWindowUpdate},
 };
-use polkadot_primitives::v2::{
+use polkadot_primitives::active_api::{
 	BlockNumber, CandidateEvent, CandidateHash, CandidateReceipt, ConsensusLog, CoreIndex,
 	GroupIndex, Hash, Header, SessionIndex,
 };
@@ -584,7 +584,7 @@ pub(crate) mod tests {
 	use polkadot_node_subsystem::messages::AllMessages;
 	use polkadot_node_subsystem_test_helpers::make_subsystem_context;
 	use polkadot_node_subsystem_util::database::Database;
-	use polkadot_primitives::v2::{SessionInfo, ValidatorIndex};
+	use polkadot_primitives::active_api::{SessionInfo, ValidatorIndex};
 	pub(crate) use sp_consensus_babe::{
 		digests::{CompatibleDigestItem, PreDigest, SecondaryVRFPreDigest},
 		AllowedSlots, BabeEpochConfiguration, Epoch as BabeEpoch,

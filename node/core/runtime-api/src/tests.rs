@@ -20,7 +20,7 @@ use ::test_helpers::{dummy_committed_candidate_receipt, dummy_validation_code};
 use futures::channel::oneshot;
 use polkadot_node_primitives::{BabeAllowedSlots, BabeEpoch, BabeEpochConfiguration};
 use polkadot_node_subsystem_test_helpers::make_subsystem_context;
-use polkadot_primitives::v2::{
+use polkadot_primitives::active_api::{
 	AuthorityDiscoveryId, CandidateEvent, CommittedCandidateReceipt, CoreState, GroupRotationInfo,
 	Id as ParaId, InboundDownwardMessage, InboundHrmpMessage, OccupiedCoreAssumption,
 	PersistedValidationData, PvfCheckStatement, ScrapedOnChainVotes, SessionIndex, SessionInfo,

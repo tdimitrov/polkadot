@@ -43,7 +43,7 @@ use polkadot_node_subsystem::{
 use polkadot_node_subsystem_util::rolling_session_window::{
 	RollingSessionWindow, SessionWindowUpdate, SessionsUnavailable,
 };
-use polkadot_primitives::v2::{
+use polkadot_primitives::active_api::{
 	byzantine_threshold, BlockNumber, CandidateHash, CandidateReceipt, CompactStatement,
 	DisputeStatement, DisputeStatementSet, Hash, ScrapedOnChainVotes, SessionIndex, SessionInfo,
 	ValidDisputeStatementKind, ValidatorId, ValidatorIndex, ValidatorPair, ValidatorSignature,

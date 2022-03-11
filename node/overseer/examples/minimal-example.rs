@@ -33,7 +33,7 @@ use polkadot_overseer::{
 	gen::{FromOverseer, SpawnedSubsystem},
 	AllMessages, HeadSupportsParachains, OverseerSignal, SubsystemError,
 };
-use polkadot_primitives::v2::Hash;
+use polkadot_primitives::active_api::Hash;
 
 struct AlwaysSupportsParachains;
 impl HeadSupportsParachains for AlwaysSupportsParachains {

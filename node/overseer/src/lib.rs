@@ -71,7 +71,7 @@ use futures::{channel::oneshot, future::BoxFuture, select, Future, FutureExt, St
 use lru::LruCache;
 
 use client::{BlockImportNotification, BlockchainEvents, FinalityNotification};
-use polkadot_primitives::v2::{Block, BlockId, BlockNumber, Hash, ParachainHost};
+use polkadot_primitives::active_api::{Block, BlockId, BlockNumber, Hash, ParachainHost};
 use sp_api::{ApiExt, ProvideRuntimeApi};
 
 use polkadot_node_network_protocol::v1 as protocol_v1;
@@ -333,7 +333,7 @@ pub async fn forward_events<P: BlockchainEvents<Block>>(client: Arc<P>, mut hand
 /// # use std::time::Duration;
 /// # use futures::{executor, pin_mut, select, FutureExt};
 /// # use futures_timer::Delay;
-/// # use polkadot_primitives::v2::Hash;
+/// # use polkadot_primitives::active_api::Hash;
 /// # use polkadot_overseer::{
 /// # 	self as overseer,
 /// #   OverseerSignal,

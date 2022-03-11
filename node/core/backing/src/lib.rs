@@ -40,7 +40,7 @@ use polkadot_node_subsystem_util::{
 	request_from_runtime, request_session_index_for_child, request_validator_groups,
 	request_validators, FromJobCommand, JobSender, Validator,
 };
-use polkadot_primitives::v2::{
+use polkadot_primitives::active_api::{
 	BackedCandidate, CandidateCommitments, CandidateDescriptor, CandidateHash, CandidateReceipt,
 	CollatorId, CommittedCandidateReceipt, CoreIndex, CoreState, Hash, Id as ParaId, SessionIndex,
 	SigningContext, ValidatorId, ValidatorIndex, ValidatorSignature, ValidityAttestation,

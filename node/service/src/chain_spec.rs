@@ -24,7 +24,7 @@ use kusama_runtime as kusama;
 use kusama_runtime_constants::currency::UNITS as KSM;
 use pallet_im_online::sr25519::AuthorityId as ImOnlineId;
 use pallet_staking::Forcing;
-use polkadot_primitives::v2::{AccountId, AccountPublic, AssignmentId, ValidatorId};
+use polkadot_primitives::active_api::{AccountId, AccountPublic, AssignmentId, ValidatorId};
 #[cfg(feature = "polkadot-native")]
 use polkadot_runtime as polkadot;
 #[cfg(feature = "polkadot-native")]
@@ -176,7 +176,7 @@ fn default_parachains_host_configuration(
 ) -> polkadot_runtime_parachains::configuration::HostConfiguration<
 	polkadot_primitives::v2::BlockNumber,
 > {
-	use polkadot_primitives::v2::{MAX_CODE_SIZE, MAX_POV_SIZE};
+	use polkadot_primitives::active_api::{MAX_CODE_SIZE, MAX_POV_SIZE};
 
 	polkadot_runtime_parachains::configuration::HostConfiguration {
 		validation_upgrade_cooldown: 2u32,

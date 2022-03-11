@@ -28,7 +28,7 @@ use futures::{select, FutureExt};
 use polkadot_node_subsystem::{
 	errors::SubsystemError, messages::ProvisionerMessage, overseer::Handle,
 };
-use polkadot_primitives::v2::{Block, Hash, InherentData as ParachainsInherentData};
+use polkadot_primitives::active_api::{Block, Hash, InherentData as ParachainsInherentData};
 use sp_blockchain::HeaderBackend;
 use sp_runtime::generic::BlockId;
 use std::time;

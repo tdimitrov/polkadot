@@ -25,7 +25,7 @@ use polkadot_node_subsystem::{
 	ActivatedLeaf, ActiveLeavesUpdate, FromOverseer, LeafStatus, OverseerSignal, RuntimeApiError,
 };
 use polkadot_node_subsystem_test_helpers::{make_subsystem_context, TestSubsystemContextHandle};
-use polkadot_primitives::v2::{
+use polkadot_primitives::active_api::{
 	BlockNumber, Hash, Header, PvfCheckStatement, SessionIndex, ValidationCode, ValidationCodeHash,
 	ValidatorId,
 };

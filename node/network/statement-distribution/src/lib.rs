@@ -34,7 +34,7 @@ use polkadot_node_network_protocol::{
 use polkadot_node_primitives::{SignedFullStatement, Statement, UncheckedSignedFullStatement};
 use polkadot_node_subsystem_util::{self as util, MIN_GOSSIP_PEERS};
 
-use polkadot_primitives::v2::{
+use polkadot_primitives::active_api::{
 	AuthorityDiscoveryId, CandidateHash, CommittedCandidateReceipt, CompactStatement, Hash,
 	SigningContext, ValidatorId, ValidatorIndex, ValidatorSignature,
 };

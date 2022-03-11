@@ -16,7 +16,7 @@
 
 use beefy_primitives::crypto::AuthorityId as BeefyId;
 use bp_rialto::derive_account_from_millau_id;
-use polkadot_primitives::v2::{AssignmentId, ValidatorId};
+use polkadot_primitives::active_api::{AssignmentId, ValidatorId};
 use rialto_runtime::{
 	AccountId, BabeConfig, BalancesConfig, BeefyConfig, BridgeMillauMessagesConfig,
 	ConfigurationConfig, GenesisConfig, GrandpaConfig, SessionConfig, SessionKeys, Signature,

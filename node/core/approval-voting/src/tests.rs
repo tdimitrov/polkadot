@@ -31,7 +31,7 @@ use polkadot_node_subsystem::{
 use polkadot_node_subsystem_test_helpers as test_helpers;
 use polkadot_node_subsystem_util::TimeoutExt;
 use polkadot_overseer::HeadSupportsParachains;
-use polkadot_primitives::v2::{
+use polkadot_primitives::active_api::{
 	CandidateCommitments, CandidateEvent, CoreIndex, GroupIndex, Header, Id as ParaId,
 	ValidationCode, ValidatorSignature,
 };

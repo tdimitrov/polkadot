@@ -29,7 +29,7 @@ use polkadot_node_network_protocol::{
 };
 use polkadot_node_primitives::BlockData;
 use polkadot_node_subsystem_util::TimeoutExt;
-use polkadot_primitives::v2::{
+use polkadot_primitives::active_api::{
 	CollatorPair, CoreState, GroupIndex, GroupRotationInfo, OccupiedCore, ScheduledCore,
 	ValidatorId, ValidatorIndex,
 };

@@ -32,7 +32,7 @@ use sp_keyring::Sr25519Keyring;
 use sp_keystore::{SyncCryptoStore, SyncCryptoStorePtr};
 
 use polkadot_node_primitives::{DisputeMessage, SignedDisputeStatement};
-use polkadot_primitives::v2::{
+use polkadot_primitives::active_api::{
 	AuthorityDiscoveryId, CandidateHash, CandidateReceipt, Hash, SessionIndex, SessionInfo,
 	ValidatorId, ValidatorIndex,
 };

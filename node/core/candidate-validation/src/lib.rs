@@ -40,7 +40,7 @@ use polkadot_node_subsystem::{
 };
 use polkadot_node_subsystem_util::metrics::{self, prometheus};
 use polkadot_parachain::primitives::{ValidationParams, ValidationResult as WasmValidationResult};
-use polkadot_primitives::v2::{
+use polkadot_primitives::active_api::{
 	CandidateCommitments, CandidateDescriptor, Hash, OccupiedCoreAssumption,
 	PersistedValidationData, ValidationCode, ValidationCodeHash,
 };

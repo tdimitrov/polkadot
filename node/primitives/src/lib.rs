@@ -34,7 +34,7 @@ pub use sp_consensus_babe::{
 };
 pub use sp_core::traits::SpawnNamed;
 
-use polkadot_primitives::v2::{
+use polkadot_primitives::active_api::{
 	BlakeTwo256, CandidateCommitments, CandidateHash, CollatorPair, CommittedCandidateReceipt,
 	CompactStatement, EncodeAs, Hash, HashT, HeadData, Id as ParaId, OutboundHrmpMessage,
 	PersistedValidationData, SessionIndex, Signed, UncheckedSigned, UpwardMessage, ValidationCode,

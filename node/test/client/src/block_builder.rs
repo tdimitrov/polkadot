@@ -16,7 +16,7 @@
 
 use crate::{Client, FullBackend};
 use parity_scale_codec::{Decode, Encode};
-use polkadot_primitives::v2::{Block, InherentData as ParachainsInherentData};
+use polkadot_primitives::active_api::{Block, InherentData as ParachainsInherentData};
 use polkadot_test_runtime::{GetLastTimestamp, UncheckedExtrinsic};
 use sc_block_builder::{BlockBuilder, BlockBuilderProvider};
 use sp_api::ProvideRuntimeApi;

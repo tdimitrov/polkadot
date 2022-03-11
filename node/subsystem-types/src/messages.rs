@@ -38,7 +38,7 @@ use polkadot_node_primitives::{
 	CollationSecondedSignal, DisputeMessage, ErasureChunk, PoV, SignedDisputeStatement,
 	SignedFullStatement, ValidationResult,
 };
-use polkadot_primitives::v2::{
+use polkadot_primitives::active_api::{
 	AuthorityDiscoveryId, BackedCandidate, BlockNumber, CandidateDescriptor, CandidateEvent,
 	CandidateHash, CandidateIndex, CandidateReceipt, CollatorId, CommittedCandidateReceipt,
 	CoreState, GroupIndex, GroupRotationInfo, Hash, Header as BlockHeader, Id as ParaId,
