@@ -24,7 +24,7 @@ use crate::{
 	util::{take_active_subset, take_active_subset_and_inactive},
 };
 use frame_support::{pallet_prelude::*, traits::OneSessionHandler};
-use primitives::v2::{AssignmentId, AuthorityDiscoveryId, SessionIndex, SessionInfo};
+use primitives::active_api::{AssignmentId, AuthorityDiscoveryId, SessionIndex, SessionInfo};
 use sp_std::vec::Vec;
 
 pub use pallet::*;

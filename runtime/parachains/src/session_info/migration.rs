@@ -35,9 +35,9 @@ pub fn migrate_to_latest<T: Config>() -> Weight {
 pub fn migrate_to_v1<T: Config>() -> Weight {
 	let mut vs = 0;
 
-	<Pallet<T> as Store>::Sessions::translate_values(|old: primitives::v2::OldV1SessionInfo| {
+	<Pallet<T> as Store>::Sessions::translate_values(|old: primitives::active_api::OldV1SessionInfo| {
 		vs += 1;
-		Some(primitives::v2::SessionInfo::from(old))
+		Some(primitives::active_api::SessionInfo::from(old))
 	});
 
 	T::DbWeight::get().reads_writes(vs, vs)
