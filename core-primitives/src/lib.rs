@@ -153,3 +153,8 @@ pub struct OutboundHrmpMessage<Id> {
 pub mod v2 {
 	pub use super::*;
 }
+
+/// `staging` primitives.
+pub mod vstaging {
+	pub use super::*;
+}

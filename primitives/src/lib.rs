@@ -20,3 +20,8 @@
 #![cfg_attr(not(feature = "std"), no_std)]
 
 pub mod v2;
+
+// The 'staging' version is special - while other versions are set in stone,
+// the staging version is malleable. Once it's released, it gets the next
+// version number.
+pub mod vstaging;
