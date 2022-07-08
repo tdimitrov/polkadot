@@ -5,37 +5,37 @@ authors = ["Parity Technologies <admin@parity.io>"]
 edition = "2021"
 
 [dependencies]
-frame-benchmarking = { git = "https://github.com/paritytech/substrate", branch = "master" }
-frame-benchmarking-cli = { git = "https://github.com/paritytech/substrate", branch = "master" }
-pallet-transaction-payment = { git = "https://github.com/paritytech/substrate", branch = "master" }
-pallet-transaction-payment-rpc-runtime-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
-frame-system = { git = "https://github.com/paritytech/substrate", branch = "master" }
-frame-system-rpc-runtime-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
+frame-benchmarking = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+frame-benchmarking-cli = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+pallet-transaction-payment = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+pallet-transaction-payment-rpc-runtime-api = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+frame-system = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+frame-system-rpc-runtime-api = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
 
-sp-consensus = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-storage = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-core = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-keyring = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-inherents = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-timestamp = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-session = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-authority-discovery = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-finality-grandpa = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-consensus-babe = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-transaction-pool = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-offchain = { package = "sp-offchain", git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-block-builder = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-mmr-primitives = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-consensus = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-storage = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-runtime = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-blockchain = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-api = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-core = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-keyring = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-inherents = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-timestamp = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-session = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-authority-discovery = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-finality-grandpa = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-consensus-babe = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-transaction-pool = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-offchain = { package = "sp-offchain", git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-block-builder = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sp-mmr-primitives = { git = "https://github.com/tdimitrov/substrate", default-features = false , branch = "staging_api" }
 
-sc-consensus = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-executor = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-service = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sc-consensus = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sc-executor = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sc-client-api = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
+sc-service = { git = "https://github.com/tdimitrov/substrate", default-features = false , branch = "staging_api" }
 
-beefy-primitives = { git = "https://github.com/paritytech/substrate", branch = "master" }
+beefy-primitives = { git = "https://github.com/tdimitrov/substrate", branch = "staging_api" }
 
 # Polkadot Runtimes
 polkadot-runtime = { path = "../../runtime/polkadot", optional = true }
